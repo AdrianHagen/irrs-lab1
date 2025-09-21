@@ -40,7 +40,7 @@ def get_word_frequencies(
     lemmatize: bool = False,
     stem: bool = False,
     remove_stopwords: bool = False,
-) -> Dict[str, int]:
+):
     """
     Returns the word frequencies for a text in descending order.
 
@@ -56,7 +56,6 @@ def get_word_frequencies(
     Returns:
         Dict[str, int]: A dictionary containing each word and its frequency.
     """
-
     text = text.lower()
 
     if tokenize:
